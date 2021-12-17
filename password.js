@@ -6,9 +6,17 @@ const reader = readline.createInterface({
     output: process.stdout,
 
 })
-reader.question("please create a password")
+reader.question("please create a password", function(input){tokens = input.split(``)
 
+password = tokens[10]
+input.length = 10
 
-var password = 10
+if(input.length >= 10){
+    console.log(`great`)
 
-if(function(password) === 10
+}else if(input.length < 10){
+    console.log(`not good`)
+}
+})
+
+reader.close
